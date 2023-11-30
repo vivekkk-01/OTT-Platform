@@ -47,7 +47,6 @@ function App() {
     {
       path: "/",
       element: <Root />,
-      errorElement: <Error />,
       children: [
         { index: true, element: <Home /> },
         { path: "/:mediaType/:id", element: <Details /> },
