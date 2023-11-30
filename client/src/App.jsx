@@ -43,6 +43,7 @@ function App() {
   }, []);
 
   const router = createBrowserRouter([
+    { path: "*", element: <Error /> },
     {
       path: "/",
       element: <Root />,
@@ -54,7 +55,6 @@ function App() {
         { path: "/explore/:mediaType", element: <Explore /> },
       ],
     },
-    { path: "*", element: <Error /> },
   ]);
 
   return <RouterProvider router={router} />;
