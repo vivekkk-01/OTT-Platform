@@ -54,6 +54,7 @@ function App() {
         { path: "/explore/:mediaType", element: <Explore /> },
       ],
     },
+    { path: "*", element: <Error /> },
   ]);
 
   return <RouterProvider router={router} />;
